@@ -1,39 +1,45 @@
 # Project Changes Log
 
-## Feature: Initial Setup
-- **Description**: Repository initialization and initial import
-- **Commits**: 
-  - Initial commit (28852172)
-  - Initial import (8ad79cbd)
+## April 27, 2025 Updates
 
-## Feature: Customer Search Enhancement
-- **Description**: Implementation of a new endpoint for customer search functionality
-- **Commit**: d98872fc
-- **Changes**: Added a new customer search endpoint
+### Common Utilities and Infrastructure
+- **Title**: Add Common Utilities Package
+- **Description**: Implemented a new common utilities package for shared functionality across microservices, including logging and Flask app creation utilities
+- **Changes**: 
+  - [ff7c1f7](https://github.com/hayyrs66/flask-microservice-demo/commit/ff7c1f7) - Added common utilities package for microservices
+  - [50fd2b0](https://github.com/hayyrs66/flask-microservice-demo/commit/50fd2b0) - Added utility functions for logging and Flask app creation
 
-## Feature: Dependency Management
-- **Description**: Updated project dependencies and requirements
-- **Commit**: 896a6c10
-- **Changes**: Updated dependencies and pip requirements file
+### Items Service Improvements
+- **Title**: Items Service Implementation and Refactoring
+- **Description**: Complete implementation of ItemsService with improved item management and retrieval functionality
+- **Changes**:
+  - [cd10371](https://github.com/hayyrs66/flask-microservice-demo/commit/cd10371) - Initial implementation of ItemsService with fake items generation
+  - [cd1b6d7](https://github.com/hayyrs66/flask-microservice-demo/commit/cd1b6d7) - Refactored items service with common utilities integration
 
-## Feature: Order Management Enhancement
-- **Description**: Improved order handling system with better error management
-- **Commits**:
-  - 6110aacf: Enhanced order detail retrieval with improved error handling and logging
-  - 568c400a: New AggregateService implementation for order and item retrieval
-  - 7cc8d92d: Enhanced error handling for item retrieval in AggregateService
+### Aggregate Service Enhancement
+- **Title**: Aggregate Service Implementation
+- **Description**: New implementation of AggregateService with robust error handling for order and item aggregation
+- **Changes**:
+  - [568c400](https://github.com/hayyrs66/flask-microservice-demo/commit/568c400) - Initial implementation of AggregateService
+  - [7cc8d92](https://github.com/hayyrs66/flask-microservice-demo/commit/7cc8d92) - Enhanced error handling for item retrieval
 
-## Feature: Common Utilities Implementation
-- **Description**: Added shared utilities package for microservices
-- **Commits**:
-  - ff7c1f78: Initial common utilities package implementation
-  - 50fd2b0b: Added utility functions for logging and Flask app creation
+### Order Service Updates
+- **Title**: Order Service Improvements
+- **Description**: Refactored order detail retrieval with enhanced error handling and logging capabilities
+- **Changes**:
+  - [6110aac](https://github.com/hayyrs66/flask-microservice-demo/commit/6110aac) - Improved error handling and logging in order detail retrieval
 
-## Feature: Items Service Enhancement
-- **Description**: Improved items service implementation with better functionality
-- **Commits**:
-  - cd1b6d7c: Refactored items service with common utilities integration
-  - cd10371c: New ItemsService implementation for managing fake items
+### Documentation and Dependencies
+- **Title**: Documentation and Dependencies Update
+- **Description**: Updated project documentation and dependencies
+- **Changes**:
+  - [896a6c1](https://github.com/hayyrs66/flask-microservice-demo/commit/896a6c1) - Updated dependencies and pip requirements
+  - [06a24a1](https://github.com/hayyrs66/flask-microservice-demo/commit/06a24a1) - Streamlined README documentation
+  - [45ffd10](https://github.com/hayyrs66/flask-microservice-demo/commit/45ffd10) - Added project changes log
 
-Note: Each commit hash can be viewed in detail by appending it to: `https://github.com/[username]/flask-microservice-demo/commit/[commit-hash]`
+## Previous Notable Changes
+- Initial customer search endpoint implementation ([d98872f](https://github.com/hayyrs66/flask-microservice-demo/commit/d98872f))
+- Initial project setup and import ([8ad79cb](https://github.com/hayyrs66/flask-microservice-demo/commit/8ad79cb), [2885217](https://github.com/hayyrs66/flask-microservice-demo/commit/2885217))
+
+Note: Each commit hash is linked directly to its corresponding changes in the GitHub repository.
 
