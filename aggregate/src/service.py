@@ -32,11 +32,11 @@ class AggregateService:
                 item = self._get_item(item_id)
                 if item:
                     items.append(item)
+            except RequestException as e:
+                logger.error(f"Request error fetching item {item_id}: {str(e)}")
             except Exception as e:
-                logger.error(f"Error fetching item {item_id}: {str(e)}")
-                # Continue with partial data
+                logger.error(f"Unexpected error fetching item {item_id}: {str(e)}")
         
-        # Replace item IDs with full item details
         result = dict(order)
         result['items'] = items
         
